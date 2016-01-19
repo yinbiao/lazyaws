@@ -1,0 +1,23 @@
+s3:GetBucketVersioning  GET Bucket versioning
+s3:PutBucketVersioning  PUT Bucket versioning
+s3:GetBucketRequestPayment  GET Bucket requestPayment
+s3:PutBucketRequestPayment  PUT Bucket requestPayment
+s3:GetBucketLocation    GET Bucket location
+s3:GetBucketPolicy  GET Bucket policy
+s3:DeleteBucketPolicy   DELETE Bucket policy
+s3:PutBucketPolicy  PUT 存储桶策略
+s3:GetBucketNotification    GET Bucket notification
+s3:PutBucketNotification    PUT Bucket notification
+s3:GetBucketLogging GET Bucket logging
+s3:PutBucketLogging PUT Bucket logging
+s3:GetBucketTagging     GET Bucket 标记
+s3:PutBucketTagging     PUT Bucket 标记
+s3:GetBucketWebsite GET Bucket website
+s3:PutBucketWebsite PUT Bucket website
+s3:DeleteBucketWebsite  DELETE Bucket website
+s3:GetLifecycleConfiguration    GET Bucket lifecycle
+s3:PutLifecycleConfiguration    PUT Bucket lifecycle
+s3:PutReplicationConfiguration  PUT Bucket 复制
+s3:GetReplicationConfiguration  GET Bucket 复制
+s3:DeleteReplicationConfiguration   DELETE Bucket 复制
+

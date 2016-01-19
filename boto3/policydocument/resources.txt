@@ -1,0 +1,8 @@
+Amazon Simple Storage Service (Amazon S3) [请注意，Amazon S3 的 ARN 不需要账号或区域。]
+    arn:aws:s3:::bucketname
+    arn:aws:s3:::bucketname/objectpath
+    示例：
+        arn:aws:s3:::my_corporate_bucket
+        arn:aws:s3:::my_corporate_bucket/*
+        arn:aws:s3:::my_corporate_bucket/Development/*
+

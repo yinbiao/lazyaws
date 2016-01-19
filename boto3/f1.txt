@@ -1,0 +1,8 @@
+this is f1 file
+{{ the }}
+{{ go }}
+{% if t %}
+true
+{% else %}
+false
+{% endif %}

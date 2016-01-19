@@ -1,0 +1,49 @@
+StringEquals 精确匹配，区分大小写
+StringNotEquals 否定匹配
+StringEqualsIgnoreCase 精确匹配，忽略大小写
+StringNotEqualsIgnoreCase 否定匹配，忽略大小写
+StringLike 区分大小写的匹配。此值可包括字符串中任何一个多字符匹配的通配符(*)或单字符匹配的通配符(?)。字符串中的任何地方。
+    Note
+    如果键包含多个值，可使用集合运算符限定 StringLike—ForAllValues:StringLike 和 ForAnyValues:StringLike。
+StringNotLike 不区分大小写的无效匹配。此值可包括字符串中任何一个多字符匹配的通配符(*)或单字符匹配的通配符(?)。字符串中的任何地方。
+
+
+NumericEquals 匹配
+NumericNotEquals 否定匹配
+NumericLessThan “小于”匹配
+NumericLessThanEquals “小于或等于”匹配
+NumericGreaterThan “大于”匹配
+NumericGreaterThanEquals “大于或等于”匹配
+
+
+DateEquals 匹配特定日期
+DateNotEquals 否定匹配
+DateLessThan 在特定日期和时间之前匹配。
+DateLessThanEquals 在特定日期和时间或之前匹配
+DateGreaterThan 在特定日期和时间之后匹配
+DateGreaterThanEquals 在特定日期和时间或之后匹配
+
+
+Bool 布尔值匹配
+
+BinaryEquals 条件可用于测试二进制格式的密钥值。它会比较指定密钥字节的值和策略中使用 Base-64 表示二进制值的值。 
+
+IP 地址条件允许您基于密钥与 IP 地址或 IP 地址范围的对比来限制访问。您可将这些条件与 aws:SourceIp 密钥搭配使用。该值必须采用标准的 CIDR 格式（例如 203.0.113.0/24）。有关更多信息，请参见 RFC 4632。
+IpAddress 指定的 IP 地址或范围
+NotIpAddress 除指定 IP 地址或范围外的所有 IP 地址
+
+Amazon 资源名称 (ARN)
+ArnEquals ARN 匹配
+ArnNotEquals ARN 无效匹配
+ArnLike  不区分大小写的 ARN 匹配。ARN 的   
+         六个由冒号分隔开的部分都要单独检查，每一个部分都可包括一个多字符匹配通配符 (*) 或一个单字符匹配通配符。
+ArnNotLike 不区分大小写的 ARN 无效匹配。此值可包括字符串中任何一个多字符匹配的通配符(*)
+           或单字符匹配的通配符(?)。字符串中的任何地方。
+
+ 
+...IfExists 条件
+除 Null 条件外，您可在任何条件运算符的末尾添加 IfExists—例如，StringLikeIfExists。如果您是指“如果请                      
+求的内容中存在策略密钥，则依照策略所述来处理密钥。若不存在密钥，则将忽略”，即可这么做。
+
+
+

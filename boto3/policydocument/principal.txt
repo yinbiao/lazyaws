@@ -1,0 +1,46 @@
+每个人（匿名用户）
+    "Principal": "*"
+
+特定 AWS 账户
+    "Principal": { "AWS": "arn:aws:iam::AWS-account-ID:root" }
+    "Principal": { "AWS": "AWS-account-ID" }
+    "Principal": { 
+        "AWS": [
+            "arn:aws:iam::AWS-account-ID:root",
+            "arn:aws:iam::AWS-account-ID:root"
+        ]
+    }
+
+联合身份用户（使用 Web 联合身份验证）
+    "Principal": { "Federated": "cognito-identity.amazonaws.com" }
+    "Principal": { "Federated": "www.amazon.com" }
+    "Principal": { "Federated": "graph.facebook.com" }
+    "Principal": { "Federated": "accounts.google.com" }
+
+联合身份用户（使用 SAML 身份提供商）
+    "Principal": { 
+        "Federated": "arn:aws:iam::AWS-account-ID:saml-provider/provider-name"
+        }
+
+IAM 角色
+    "Principal": { "AWS": "arn:aws:iam::AWS-account-ID:role/role-name" }
+
+特定的担任了角色的用户
+    "Principal": { 
+        "AWS": "arn:aws:sts::AWS-account-ID:assumed-role/role-name/role-session-name" }
+
+AWS 服务
+    "Principal": {
+        "Service": [
+            "ec2.amazonaws.com",
+            "datapipeline.amazonaws.com" 
+        ]
+    }
+
+某些 AWS 服务支持其他用于指定委托人的选项。例如，Amazon S3 允许您使用规范用户，格式如下：
+    "Principal": { 
+        "CanonicalUser": 
+        "79a59df900b949e55d96a1e698fbacedfd6e09d98eacf8f8d5218e7cd47ef2be" 
+        }
+
+

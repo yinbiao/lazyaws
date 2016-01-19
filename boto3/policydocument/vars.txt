@@ -1,0 +1,12 @@
+在所有请求中可用的信息
+    aws:CurrentTime（用于日期/时间条件）
+    aws:EpochTime（用新纪元或 UINX 时间表示的日期，用于日期/时间条件）
+    aws:TokenIssueTime（颁发临时安全证书的日期/时间，用于日期/时间条件）
+        Note
+        此键仅在使用临时安全证书签名的请求中可用。有关临时安全凭证的更多信息，请参阅临时安全证书。
+    aws:principaltype（表示委托人是否是账户用户、联合用户或代入角色的值；请参见后续解释）
+    aws:SecureTransport（表示请求是否使用 SSL 发送的布尔值）
+    aws:SourceIp（请求者的 IP 地址，用于 IP 地址条件）
+    aws:UserAgent（有关请求者客户端应用程序的信息，用于字符串条件）
+    aws:userid（当前用户的唯一 ID；请参见下图）
+    aws:username（当前用户的易记名称；请参见下图）
